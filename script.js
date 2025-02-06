@@ -11,6 +11,26 @@ function createMemberForm(index, isLeader = false) {
             </div>
 
             <div class="form-group">
+                <label for="${prefix}Name">Department</label>
+                <select id="${prefix}Semester" name="${prefix}Department" required>
+                    <option value="">Select Department</option>
+                    
+                    <option value="CSE">BTECH CSE</option>
+                    
+                    <option value="IT">BTECH IT</option>
+                    
+                    <option value="ME">BTECH ME</option>
+                    <option value="CE">BTECH CE</option>
+                    
+                    <option value="ECE">BTECH ECE</option>
+                    
+                    <option value="OTHERS">OTHERS</option>
+                    
+
+                </select>
+            </div>
+
+            <div class="form-group">
                 <label for="${prefix}Email">Email</label>
                 <input type="email" id="${prefix}Email" name="${prefix}Email" required>
             </div>

@@ -11,7 +11,7 @@ function createMemberForm(index, isLeader = false) {
             </div>
 
             <div class="form-group">
-                <label for="${prefix}Name">Department</label>
+                <label for="${prefix}Name">Branch</label>
                 <select id="${prefix}Semester" name="${prefix}Department" required>
                     <option value="">Select Department</option>
                     

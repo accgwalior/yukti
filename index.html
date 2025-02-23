@@ -19,6 +19,21 @@
         
         <h2>Thank you for showing your Interest</h2>
         <center><h3>Registrations are closed for now</h3></center>
+        <!-- <img src="YUKTI IS NOW LIVE.svg" alt="" srcset=""> -->
+         <h1>YUKTI IS NOW LIVE!</h1>
+        <div class="css">
+            <div class="style">
+                <div class="background">
+                    <div class="color">
+                        <img src="_html___html_.svg" alt="ANSWER TO START YOUR SOLUTION">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="countdown" class="countdown-timer"></div>
+
+     
+
         <h4><br>
             Contact us @
             <br>
@@ -31,6 +46,45 @@
 
     <script src="script.js">
 
+
+    </script>
+    <script>
+        function updateCountdown() {
+    const startTime = new Date("2025-02-24T09:00:00").getTime();
+    const endTime = new Date("2025-02-25T17:00:00").getTime();
+    const now = new Date().getTime();
+    
+    let remainingTime;
+    let message;
+    
+    // Before hackathon starts
+    if (now < startTime) {
+        remainingTime = startTime - now;
+        message = "Hackathon Starts in:";
+    }
+    // During hackathon
+    else if (now >= startTime && now <= endTime) {
+        remainingTime = endTime - now;
+        message = "Event Ends In:";
+    }
+    // After hackathon ends
+    else {
+        document.getElementById("countdown").innerHTML = "Event has ended.";
+        return;
+    }
+    
+    const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+    
+    document.getElementById("countdown").innerHTML = 
+        `<h2>${message}</h2>
+         <h3>${days}d ${hours}h ${minutes}m ${seconds}s</h3>`;
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
     </script>
 </body>
 </html>

@@ -17,6 +17,12 @@ body {
         radial-gradient(circle at 90% 80%, rgba(0, 255, 255, 0.1) 0%, transparent 40%);
 }
 
+.css{
+    display: flex;
+    opacity: 0%;
+    z-index: -1000;
+}
+
 .header {
     width: 100%;
     padding: 20px;
@@ -25,6 +31,26 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+
+.countdown-timer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+  
+  .countdown-timer h2 {
+    font-size: 1.8em;
+    color: #00ffff;
+    margin-bottom: 10px;
+  }
+  
+  .countdown-timer h3 {
+    font-size: 2em;
+    color: #fff;
+  }
 
 .logo {
     height: 60px;

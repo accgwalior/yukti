@@ -50,7 +50,7 @@
     </script>
     <script>
         function updateCountdown() {
-    const startTime = new Date("2025-02-24T09:30:00").getTime();
+    const startTime = new Date("2025-02-24T11:00:00").getTime();
     const endTime = new Date("2025-02-25T17:00:00").getTime();
     const now = new Date().getTime();
     
@@ -60,7 +60,7 @@
     // Before hackathon starts
     if (now < startTime) {
         remainingTime = startTime - now;
-        message = "Hackathon Starts in:";
+        message = "Problem Statement Reveal in:";
     }
     // During hackathon
     else if (now >= startTime && now <= endTime) {
